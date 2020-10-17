@@ -1,0 +1,11 @@
+docker run -d --user 0 -p 5901:5901 -p 6901:6901 consol/centos-xfce-vnc
+
+Could you please specify what you're trying to achieve?
+Do you want to switch to the root user for a running container?
+
+If so, you could either run a new container with --user 0 flag
+
+docker run -d --user 0 -p 5901:5901 -p 6901:6901 consol/centos-xfce-vnc
+or you could switch users when executing a command on a running container
+
+docker exec -it -u 0 <container_id> bash
