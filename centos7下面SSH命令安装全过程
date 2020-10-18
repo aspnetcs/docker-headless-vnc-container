@@ -1,0 +1,26 @@
+https://blog.csdn.net/danielantony/article/details/87997574
+1、  首先，检查CentOS7是否安装了openssh-server，在终端中输入  yum list installed | grep openssh-server
+                  此处显示已经安装了  openssh-server，如果又没任何输出显示表示没有安装，通过输入yum install openssh-server安装
+
+    2、 找到了  /etc/ssh/  目录下的sshd服务配置文件 sshd_config，用Vim编辑器打开
+            
+            将文件中，关于监听端口、监听地址前的 # 号去除
+              
+              Port 22
+              ListenAddress 0.0.0.0
+              ListerAddress ::
+              PermiRootLogin yes
+              PasswordAuthentication yes
+
+        
+     3、开启sshd服务，输入 sudo service sshd start
+            检查  sshd  服务是否已经开启，输入ps -ef | grep sshd
+        
+     4、使用ip addr查看地址
+
+
+     5、为了免去每次开启 CentOS 时，都要手动开启  sshd 服务，
+             将 sshd 服务添加至自启动列表中，输入systemctl enable sshd.service
+
+
+    6、通过本机工具进行连接   
