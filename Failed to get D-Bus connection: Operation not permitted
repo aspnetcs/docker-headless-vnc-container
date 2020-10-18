@@ -1,0 +1,9 @@
+docker run --privileged -it --name web centos:7.4.1708 /usr/sbin/init  #运行容器
+
+https://www.cnblogs.com/lvhanzhi/p/11332438.html
+
+报这个错的原因是dbus-daemon没能启动。systemctl并不是不能使用。将CMD或者entrypoint设置为/usr/sbin/init即可。docker容器会自动将dbus等服务启动起来。
+
+解决方法:
+
+docker run --privileged -it --name web centos:7.4.1708 /usr/sbin/init  #运行容器
