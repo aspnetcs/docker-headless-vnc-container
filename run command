@@ -18,3 +18,5 @@ apt-get install linux-kernel-headers kernel-package
 #https://www.pianshen.com/article/9275420147/
 yum install kernel-devel kernel-headers -y
 yum info kernel-devel kernel-headers
+
+#https://kernel.ubuntu.com/~kernel-ppa/mainline/v4.15/
