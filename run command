@@ -10,3 +10,11 @@ nvidia-docker run -d --privileged --user 0 -p 5901:5901 -p 6901:6901 consol/ubun
 
 sudo ./NVIDIA-Linux-x86_64-384.59.run -no-opengl-files -no-x-check
 
+#ubuntu中安装kernel-devel
+#https://blog.csdn.net/weixin_33860737/article/details/94266889
+apt-get install linux-kernel-headers kernel-package
+
+#centos7.5英伟达驱动
+#https://www.pianshen.com/article/9275420147/
+yum install kernel-devel kernel-headers -y
+yum info kernel-devel kernel-headers
