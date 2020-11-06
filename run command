@@ -22,7 +22,8 @@ yum info kernel-devel kernel-headers
 #https://kernel.ubuntu.com/~kernel-ppa/mainline/v4.15/
 
 #
-apt-get install linux-source https://blog.csdn.net/weixin_33860737/article/details/94266889
+apt-get install linux-source 
+#https://blog.csdn.net/weixin_33860737/article/details/94266889
 
 #uname -r
 
@@ -30,3 +31,4 @@ apt-get install linux-source https://blog.csdn.net/weixin_33860737/article/detai
 .tar.bz2
 
 解压：tar jxvf FileName.tar.bz2
+make menuconfig
