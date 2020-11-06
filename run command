@@ -8,3 +8,5 @@ docker run -d --privileged --user 0 -p 5901:5901 -p 6901:6901 consol/ubuntu-xfce
 
 nvidia-docker run -d --privileged --user 0 -p 5901:5901 -p 6901:6901 consol/ubuntu-xfce-vnc
 
+sudo ./NVIDIA-Linux-x86_64-384.59.run -no-opengl-files -no-x-check
+
