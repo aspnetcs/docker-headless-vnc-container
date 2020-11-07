@@ -32,3 +32,17 @@ apt-get install linux-source
 
 解压：tar jxvf FileName.tar.bz2
 make menuconfig
+
+
+Ubuntu更改密码步骤： 
+进入Ubuntu，打开一个终端，输入 sudo su转为root用户。 注意，必须先转为root用户！！！ 
+
+sudo passwd user(user 是对应的用户名) 。
+
+输入新密码，确认密码。 
+
+修改密码成功，挂起，enter进入系统登录界面，输入新密码进入Ubuntu。
+
+
+
+
