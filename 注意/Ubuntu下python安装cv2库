@@ -1,0 +1,11 @@
+https://blog.csdn.net/hukongtao1994/article/details/80985808
+Ubuntu下python安装cv2库
+
+hukongtao1994 2018-07-10 14:43:39  13763  收藏 3
+文章标签： ubuntu python cv2
+版权
+sudo apt-get install python-opencv
+
+pip install opencv-python
+
+两个都试试
